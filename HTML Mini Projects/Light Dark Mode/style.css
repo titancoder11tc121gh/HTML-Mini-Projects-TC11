@@ -1,0 +1,82 @@
+/* Define our Light Mode variables as the default */
+:root {
+    --bg-color: #e0eaf5; /* Bright day background */
+    --text-color: #1a1a24;
+    --toggle-bg: #87ceeb; /* Sky blue pill */
+    --sun-color: #ffcc00; /* Golden sun */
+}
+
+/* Define our Dark Mode variables */
+.dark-theme {
+    --bg-color: #111116; /* Deep night background */
+    --text-color: #f0f4f8;
+    --toggle-bg: #2c3e50; /* Night sky pill */
+    --sun-color: transparent; /* CRITICAL: Hide the base color so the moon shadow shows */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    /* Smooth transition for every color change */
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Hide the actual checkbox square */
+.toggle-checkbox {
+    display: none;
+}
+
+/* The background pill shape */
+.toggle-label {
+    width: 120px;
+    height: 60px;
+    background-color: var(--toggle-bg);
+    border-radius: 60px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    box-shadow: inset 0 4px 10px rgba(0,0,0,0.2);
+    transition: background-color 0.5s ease;
+}
+
+/* The Sun (Default State) */
+.celestial-body {
+    width: 50px;
+    height: 50px;
+    background-color: var(--sun-color);
+    border-radius: 50%;
+    /* cubic-bezier gives it a slight "bounce" when it stops sliding */
+    transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55), 
+                background-color 0.5s ease, 
+                box-shadow 0.5s ease;
+    box-shadow: 0 0 20px rgba(255, 204, 0, 0.6); /* Sun glow */
+}
+
+/* The Moon (Checked/Dark State) */
+/* When the checkbox is checked, find the label next to it, then find the celestial body */
+.toggle-checkbox:checked + .toggle-label .celestial-body {
+    /* Slide it to the right */
+    transform: translateX(60px);
+    
+    /* THE MAGIC: Use an inner shadow to create a crescent moon shape */
+    box-shadow: inset -15px -10px 0px 0px #f0f4f8; 
+}
+
+h2 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}

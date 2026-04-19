@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Overdrive | 3D Runner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container" id="game-container">
+        <div class="hud">
+            <div class="score">SCORE: <span id="score-val">0</span></div>
+            <div class="speed">SPD: <span id="speed-val">1x</span></div>
+        </div>
+
+        <div class="world" id="world">
+            <div class="road"></div>
+            <div class="player" id="player">
+                <div class="ship"></div>
+                <div class="engine-glow"></div>
+            </div>
+            </div>
+
+        <div class="overlay" id="overlay">
+            <h1>CRITICAL FAILURE</h1>
+            <p>Your data pulse was destabilized.</p>
+            <button onclick="startGame()">REBOOT SYSTEM</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

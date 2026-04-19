@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+    background-color: #050505; /* Deep, dark background */
+    height: 100vh;
+    overflow: hidden; /* Prevents scrollbars if particles hit the edge */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 3rem;
+    color: white;
+    opacity: 0.1;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    pointer-events: none; /* Ensures the text doesn't block the cursor */
+}
+
+/* Base style for the particles injected by JavaScript */
+.particle {
+    position: absolute;
+    pointer-events: none;
+    border-radius: 50%;
+    background: #fff;
+    /* The animation that makes them disappear */
+    animation: fadeOut 0.8s forwards; 
+}
+
+@keyframes fadeOut {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0); /* Shrinks to nothing */
+        opacity: 0;  /* Fades completely out */
+    }
+}

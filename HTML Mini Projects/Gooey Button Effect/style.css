@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #09090b; /* Deep dark background */
+    cursor: none; /* Hide the default mouse pointer */
+    overflow: hidden;
+}
+
+.gooey-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* THIS IS THE MAGIC LINE */
+    filter: url('#goo'); 
+}
+
+.magic-btn {
+    padding: 20px 60px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background: #00ffcc; /* Neon cyan */
+    color: #09090b;
+    border-radius: 50px;
+    border: none;
+    position: relative;
+    z-index: 10;
+    pointer-events: auto;
+    transition: transform 0.2s ease;
+}
+
+.magic-btn:hover {
+    transform: scale(1.05); /* Slight bump up when hovering */
+}
+
+.cursor-blob {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #00ffcc; /* Must match the button color perfectly */
+    border-radius: 50%;
+    transform: translate(-50%, -50%); /* Centers the blob on the exact mouse coordinates */
+    pointer-events: none; /* Ensures the blob doesn't block you from clicking the button */
+    z-index: 5;
+    transition: width 0.3s ease, height 0.3s ease;
+}

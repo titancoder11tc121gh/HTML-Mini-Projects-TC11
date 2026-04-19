@@ -1,0 +1,183 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Poppins, sans-serif;
+}
+
+/*********** CENTER FIXED 9:16 SCREEN *************/
+body{
+  width:100vw;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#000;
+  overflow:hidden;
+}
+
+.phone-screen{
+  width:100%;
+  max-width:430px;
+  aspect-ratio:9 / 16;
+  background:#050510;
+  position:relative;
+  overflow:hidden;
+  border-radius:20px;
+  border:1px solid #222;
+  box-shadow:0 0 40px rgba(0,255,255,0.2);
+  perspective:1200px;
+}
+
+/*********** FLOATING 3D CUBES *************/
+.cube{
+  position:absolute;
+  width:120px;
+  height:120px;
+  background:rgba(0,255,255,0.08);
+  border:2px solid rgba(0,255,255,0.2);
+  animation:rotateCube 12s linear infinite;
+  transform-style:preserve-3d;
+  filter:drop-shadow(0 0 20px #00eaff);
+  border-radius:10px;
+}
+.c1{ top:10%; left:15%; animation-duration:14s; }
+.c2{ top:55%; left:70%; animation-duration:18s; }
+.c3{ top:75%; left:20%; animation-duration:22s; }
+.c4{ top:25%; left:80%; animation-duration:16s; }
+
+@keyframes rotateCube{
+  0%{ transform:rotateX(0deg) rotateY(0deg); }
+  50%{ transform:rotateX(180deg) rotateY(270deg); }
+  100%{ transform:rotateX(360deg) rotateY(720deg); }
+}
+
+/*********** GLASS LOGIN CARD *************/
+.card{
+  width:90%;
+  max-width:380px;
+  padding:40px 30px;
+  background:rgba(255,255,255,0.07);
+  border-radius:20px;
+  border:1px solid rgba(255,255,255,0.12);
+  backdrop-filter:blur(15px);
+  box-shadow:0 0 40px rgba(0,255,255,0.3);
+  margin:auto;
+  margin-top:70px;
+  animation:cardFloat 4s ease-in-out infinite;
+}
+
+@keyframes cardFloat{
+  0%,100%{ transform:translateY(0); }
+  50%{ transform:translateY(-12px); }
+}
+
+/* Sign In Text Animation */
+.card h2{
+  text-align:center;
+  font-size:34px;
+  letter-spacing:1px;
+  color:#fff;
+  margin-bottom:25px;
+  text-shadow:0 0 8px #00eaff;
+  animation:signInText 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes signInText{
+  0%{transform:scale(1) rotate(0deg); color:#00eaff; text-shadow:0 0 8px #00eaff;}
+  50%{transform:scale(1.05) rotate(2deg); color:#00ffbf; text-shadow:0 0 12px #00ffbf;}
+  100%{transform:scale(1) rotate(0deg); color:#00eaff; text-shadow:0 0 8px #00eaff;}
+}
+
+/*********** INPUTS *************/
+.inputBox{
+  margin:18px 0;
+  position:relative;
+}
+.inputBox input{
+  width:100%;
+  padding:16px 13px;
+  border:none;
+  outline:none;
+  font-size:17px;
+  border-radius:12px;
+  color:#fff;
+  background:rgba(255,255,255,0.13);
+  backdrop-filter:blur(5px);
+}
+.inputBox label{
+  position:absolute;
+  left:14px;
+  top:50%;
+  transform:translateY(-50%);
+  color:#aaa;
+  transition:0.3s;
+  pointer-events:none;
+}
+.inputBox input:focus + label,
+.inputBox input:not(:placeholder-shown) + label{
+  top:-8px;
+  font-size:12px;
+  background:#050510;
+  padding:0 6px;
+  color:#00eaff;
+}
+
+/* Password toggle button animation */
+#togglePass{
+  position:absolute;
+  right:12px;
+  top:50%;
+  transform:translateY(-50%);
+  cursor:pointer;
+  color:#00eaff;
+  font-size:16px;
+  user-select:none;
+  animation:eyePulse 1s infinite alternate;
+}
+
+@keyframes eyePulse{
+  0%{transform:translateY(-50%) scale(1); color:#00eaff;}
+  50%{transform:translateY(-50%) scale(1.2); color:#00ffbf;}
+  100%{transform:translateY(-50%) scale(1); color:#00eaff;}
+}
+
+/*********** GLOW BUTTON *************/
+.btn{
+  margin-top:14px;
+  width:100%;
+  padding:15px 0;
+  font-size:19px;
+  color:#fff;
+  border:none;
+  border-radius:14px;
+  background:linear-gradient(135deg,#00eaff,#0077ff);
+  cursor:pointer;
+  box-shadow:0 0 20px #00eaff;
+  transition:0.25s;
+}
+.btn:hover{
+  transform:translateY(-4px) scale(1.03);
+  box-shadow:0 0 35px #00eaff,0 0 50px #0077ff;
+}
+.btn:active{
+  transform:translateY(3px) scale(0.97);
+}
+
+#errorText{
+  margin-top:12px;
+  height:20px;
+  text-align:center;
+  color:#ff5f5f;
+}
+
+.links{
+  margin-top:18px;
+  color:#bbb;
+  text-align:center;
+  font-size:14px;
+}
+.links a{
+  color:#00eaff;
+  text-decoration:none;
+}

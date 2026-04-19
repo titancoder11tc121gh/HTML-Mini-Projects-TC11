@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background: #0f1015; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    user-select: none;
+}
+
+/* Master container holds everything and creates the 3D base */
+.dial-container {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background: #15161c;
+    box-shadow: 20px 20px 40px #08080a, -20px -20px 40px #1c1d26; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* --- THE LED RING --- */
+.led-ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0; 
+    height: 0;
+    z-index: 5; /* Safely above the base, but below the knob */
+}
+
+.led {
+    position: absolute;
+    width: 4px; 
+    height: 16px;
+    background: #1c1d26;
+    border-radius: 2px;
+    /* Pushes LEDs out to a 135px radius (270px diameter ring) */
+    transform-origin: center 135px; 
+    margin-left: -2px; 
+    margin-top: -135px;
+    transition: background 0.1s, box-shadow 0.1s;
+}
+
+/* Ambient glow */
+.core-glow {
+    position: absolute;
+    width: 170px; 
+    height: 170px;
+    border-radius: 50%;
+    z-index: 6;
+    transition: box-shadow 0.1s ease;
+}
+
+/* --- THE SPINNING METAL RING --- */
+.dial {
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    background: repeating-conic-gradient(#1c1d26 0deg 2deg, #121318 2deg 4deg);
+    box-shadow: inset 0 0 15px rgba(0,0,0,0.8), 0 15px 30px rgba(0,0,0,0.7);
+    cursor: grab;
+    position: absolute;
+    z-index: 10;
+    border: 2px solid #2a2b36;
+}
+
+.dial:active { 
+    cursor: grabbing; 
+}
+
+.dial-indicator {
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 14px; 
+    height: 14px;
+    background: #00ffcc;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #00ffcc, inset 0 0 5px #fff;
+    transition: background 0.1s, box-shadow 0.1s;
+}
+
+/* --- THE NEW STATIONARY CENTER --- */
+.digital-display {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    background: #0a0a0d; /* Dark tinted glass */
+    border-radius: 50%;
+    z-index: 20; /* Sits perfectly on top of the dial */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 20px #000, 0 5px 15px rgba(0,0,0,0.5);
+    border: 2px solid #1a1b22;
+    /* CRITICAL: Lets your mouse click right through the glass to spin the dial underneath */
+    pointer-events: none; 
+}
+
+.digital-display span {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #00ffcc;
+    text-shadow: 0 0 15px #00ffcc;
+    transition: color 0.1s, text-shadow 0.1s;
+}
+
+.digital-display .percent {
+    font-size: 1.2rem;
+    margin-left: 4px;
+    color: #444; /* Keep the % symbol dark for contrast */
+    text-shadow: none;
+}
