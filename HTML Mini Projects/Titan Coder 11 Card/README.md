@@ -1,9 +1,9 @@
 # 🚀 Project Showcase
 
-## [INSERT PROJECT TITLE HERE]
+## Titan Coder 11 Card
 
 <div align="left">
-  <a href="titancoder11tc121gh/HTML-Mini-Projects-TC11/new/main/HTML%20Mini%20Projects/Titan%20Coder%2011%20Card/"><img src="https://img.shields.io/badge/LIVE_DEMO-2ecc71?style=pill&logo=google-chrome&logoColor=white" height="45"></a> 
+  <a href="https://titancoder11tc121gh.github.io/HTML-Mini-Projects-TC11/HTML%20Mini%20Projects/Titan%20Coder%2011%20Card/"><img src="https://img.shields.io/badge/LIVE_DEMO-2ecc71?style=pill&logo=google-chrome&logoColor=white" height="45"></a> 
   <a href="https://youtube.com/shorts/sBZiyDgivtQ?si=uT1kkk4VaAR3SVRW"><img src="https://img.shields.io/badge/SHORT-ff0000?style=pill&logo=youtube&logoColor=white" height="45"></a>
   <a href="https://www.instagram.com/reel/DWlz2Y0CMR4/?igsh=MXgyNjhzYWE1MzNwNg=="><img src="https://img.shields.io/badge/REEL-e4405f?style=pill&logo=instagram&logoColor=white" height="45"></a>
 </div>
