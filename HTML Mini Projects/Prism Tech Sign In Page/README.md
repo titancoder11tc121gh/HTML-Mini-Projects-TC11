@@ -1,9 +1,9 @@
 # 🚀 Project Showcase
 
-## Titan Coder 11 Card
+## Prism Tech Sign In Page
 
 <div align="left">
-  <a href="https://titancoder11tc121gh.github.io/HTML-Mini-Projects-TC11/HTML%20Mini%20Projects/Prism%20Tech%20Sign%20In%20Page/><img src="https://img.shields.io/badge/LIVE_DEMO-2ecc71?style=pill&logo=google-chrome&logoColor=white" height="45"></a> 
+  <a href="https://titancoder11tc121gh.github.io/HTML-Mini-Projects-TC11/HTML%20Mini%20Projects/Prism%20Tech%20Sign%20In%20Page/"><img src="https://img.shields.io/badge/LIVE_DEMO-2ecc71?style=pill&logo=google-chrome&logoColor=white" height="45"></a> 
   <a href="https://youtube.com/shorts/4oxTpOC-Hak?si=YbIwO6hZTMEw58hV"><img src="https://img.shields.io/badge/SHORT-ff0000?style=pill&logo=youtube&logoColor=white" height="45"></a>
   <a href="https://www.instagram.com/reel/DW6aRfsCPgI/?igsh=MTJobXBwNTNleDd2dA=="><img src="https://img.shields.io/badge/REEL-e4405f?style=pill&logo=instagram&logoColor=white" height="45"></a>
 </div>
