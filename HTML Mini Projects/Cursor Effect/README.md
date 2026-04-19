@@ -1,6 +1,6 @@
 # 🚀 Project Showcase
 
-## Titan Coder 11 Card
+## Cursor Effect
 
 <div align="left">
   <a href="https://titancoder11tc121gh.github.io/HTML-Mini-Projects-TC11/HTML%20Mini%20Projects/Cursor%20Effect/"><img src="https://img.shields.io/badge/LIVE_DEMO-2ecc71?style=pill&logo=google-chrome&logoColor=white" height="45"></a>
