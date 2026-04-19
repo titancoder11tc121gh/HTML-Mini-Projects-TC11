@@ -19,8 +19,8 @@
 
 ### 📲 SUBSCRIBE / FOLLOW US 
 <div align="left">
-  <a href="https://youtube.com/@titancoder11?si=K8k2OtDmCab5dKZA"><img src="https://img.shields.io/badge/YOUTUBE-FF0000?style=pill&logo=youtube&logoColor=white" height="40" width="120"></a><br>  
-  <a href="https://www.instagram.com/titancoder11?igsh=eTQ3MjdydThtYWsz"><img src="https://img.shields.io/badge/INSTAGRAM-E4405F?style=pill&logo=instagram&logoColor=white" height="40" width="120"></a>&nbsp;&nbsp;
+  <a href="https://youtube.com/@titancoder11?si=K8k2OtDmCab5dKZA"><img src="https://img.shields.io/badge/YOUTUBE-FF0000?style=pill&logo=youtube&logoColor=white" height="30" width="120"></a><br>  
+  <a href="https://www.instagram.com/titancoder11?igsh=eTQ3MjdydThtYWsz"><img src="https://img.shields.io/badge/INSTAGRAM-E4405F?style=pill&logo=instagram&logoColor=white" height="30" width="120"></a>&nbsp;&nbsp;
 </div>
 
 ---
