@@ -1,9 +1,9 @@
 # 🚀 Project Showcase
 
-## Cursor Effect
+## Titan Coder 11 Card
 
 <div align="left">
-  <a href="https://titancoder11tc121gh.github.io/HTML-Mini-Projects-TC11/HTML%20Mini%20Projects/Cursor%20Effect/><img src="https://img.shields.io/badge/LIVE_DEMO-2ecc71?style=pill&logo=google-chrome&logoColor=white" height="45"></a> 
+  <a href="https://titancoder11tc121gh.github.io/HTML-Mini-Projects-TC11/HTML%20Mini%20Projects/Cursor%20Effect/"><img src="https://img.shields.io/badge/LIVE_DEMO-2ecc71?style=pill&logo=google-chrome&logoColor=white" height="45"></a>
   <a href="https://youtube.com/shorts/d4GL24bFNQY?si=WEJzmNj7gdZcP-C4"><img src="https://img.shields.io/badge/SHORT-ff0000?style=pill&logo=youtube&logoColor=white" height="45"></a>
   <a href="https://www.instagram.com/reel/DW-zuv7CDaz/?igsh=MWVubWtuZ2N0cDU4bA=="><img src="https://img.shields.io/badge/REEL-e4405f?style=pill&logo=instagram&logoColor=white" height="45"></a>
 </div>
