@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Grand Archive | Pro 3D Reader</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+</head>
+<body>
+
+    <div class="ambient-bg"></div>
+
+    <div class="interface-panel" id="ui-panel">
+        <label for="file-input" class="btn primary">
+            <i class="fas fa-file-upload"></i> Open PDF
+        </label>
+        <button id="fullscreen-btn" class="btn secondary">
+            <i class="fas fa-expand"></i> Full Screen
+        </button>
+        <input type="file" id="file-input" accept="application/pdf" style="display:none;">
+    </div>
+
+    <div class="control-bar" id="control-bar">
+        <div class="zoom-controls">
+            <button id="zoom-out"><i class="fas fa-search-minus"></i></button>
+            <span id="zoom-val">100%</span>
+            <button id="zoom-in"><i class="fas fa-search-plus"></i></button>
+        </div>
+        
+        <div class="page-nav">
+            <input type="number" id="page-input" value="1" min="1">
+            <span id="total-pages">/ 0</span>
+        </div>
+
+        <button id="hide-ui" title="Hide Menu"><i class="fas fa-eye-slash"></i></button>
+    </div>
+
+    <div class="stage" id="main-stage">
+        <div class="book-wrapper" id="book-wrapper">
+            <div class="book" id="book">
+                <div class="welcome-screen">
+                    <i class="fas fa-feather-alt"></i>
+                    <p>Load your manuscript to begin...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
