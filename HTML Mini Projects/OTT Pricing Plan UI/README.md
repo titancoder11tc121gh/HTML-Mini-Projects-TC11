@@ -3,7 +3,7 @@
 ## Light Dark Mode
 
 <div align="left">
-  <a href="https://titancoder11tc121gh.github.io/HTML-Mini-Projects-TC11/HTML%20Mini%20Projects/OTT%20Pricing%20Plan/"><img src="https://img.shields.io/badge/LIVE_DEMO-2ecc71?style=pill&logo=google-chrome&logoColor=white" height="45"></a> 
+  <a href="https://titancoder11tc121gh.github.io/HTML-Mini-Projects-TC11/HTML%20Mini%20Projects/OTT%20Pricing%20Plan%20UI/"><img src="https://img.shields.io/badge/LIVE_DEMO-2ecc71?style=pill&logo=google-chrome&logoColor=white" height="45"></a> 
   <a href="https://youtube.com/shorts/cZ4tbvW1Arw?si=GSdaM3f28_6rb3h9"><img src="https://img.shields.io/badge/SHORT-ff0000?style=pill&logo=youtube&logoColor=white" height="45"></a>
   <a href="https://www.instagram.com/reel/DXenMA0iJA0/?igsh=MTQybW1ubmxneGV2aA=="><img src="https://img.shields.io/badge/REEL-e4405f?style=pill&logo=instagram&logoColor=white" height="45"></a>
 </div>
