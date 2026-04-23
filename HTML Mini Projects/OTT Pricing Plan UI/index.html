@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prism Pricing Table | INR</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="pricing-container">
+        <h2>Choose Your Plan</h2>
+        
+        <div class="toggle-container">
+            <span>Monthly</span>
+            <div class="toggle-btn" id="toggle">
+                <div class="circle"></div>
+            </div>
+            <span>Yearly <small>(Save 20%)</small></span>
+        </div>
+
+        <div class="cards-wrapper">
+            <div class="price-card">
+                <h3>Starter</h3>
+                <div class="price">
+                    ₹<span class="amount" data-monthly="499" data-yearly="399">499</span><small>/mo</small>
+                </div>
+                <ul>
+                    <li><i class="fas fa-check"></i> 5 Projects</li>
+                    <li><i class="fas fa-check"></i> Basic Analytics</li>
+                    <li><i class="fas fa-times"></i> 24/7 Support</li>
+                </ul>
+                <button class="btn">Get Started</button>
+            </div>
+
+            <div class="price-card popular">
+                <div class="badge">Most Popular</div>
+                <h3>Pro</h3>
+                <div class="price">
+                    ₹<span class="amount" data-monthly="999" data-yearly="799">999</span><small>/mo</small>
+                </div>
+                <ul>
+                    <li><i class="fas fa-check"></i> Unlimited Projects</li>
+                    <li><i class="fas fa-check"></i> Advanced AI Tools</li>
+                    <li><i class="fas fa-check"></i> Priority Support</li>
+                </ul>
+                <button class="btn btn-glow">Upgrade Now</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
