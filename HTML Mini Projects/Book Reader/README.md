@@ -1,6 +1,6 @@
 # 🚀 Project Showcase
 
-## Cursor Effect
+## Book Reader
 
 <div align="left">
   <a href="https://titancoder11tc121gh.github.io/HTML-Mini-Projects-TC11/HTML%20Mini%20Projects/Book%20Reader/"><img src="https://img.shields.io/badge/LIVE_DEMO-2ecc71?style=pill&logo=google-chrome&logoColor=white" height="45"></a>
