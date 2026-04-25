@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Profile Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="background-blobs">
+        <div class="blob"></div>
+        <div class="blob"></div>
+    </div>
+
+    <div class="profile-card" id="card">
+        <div class="image-section">
+            <img src="profile.png" id="profile-img">
+        </div>
+        
+        <div class="info-section">
+            <h2>Titan Coder 11</h2>
+            <p>Casting Spells in HTML,CSS and Javascript</p>
+            
+            <div class="stats">
+                <div class="stat">
+                    <span>13</span>
+                    <label>Projects</label>
+                </div>
+                <div class="stat">
+                    <span>2</span>
+                    <label>Followers</label>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="#" class="fab fa-github"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+                <a href="#" class="fab fa-twitter"></a>
+            </div>
+
+            <button class="follow-btn" onclick="toggleFollow()">Follow</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
