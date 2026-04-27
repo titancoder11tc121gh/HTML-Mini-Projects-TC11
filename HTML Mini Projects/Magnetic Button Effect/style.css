@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+    /* Mid-tone dark gray background */
+    background: #09090c; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.magnetic-btn {
+    position: relative;
+    padding: 22px 65px; /* Slightly refined padding */
+    /* Subtle dark gradient background */
+    background: radial-gradient(circle at center, #1a1b22 0%, #0d0e12 100%); 
+    border: 2px solid rgba(0, 255, 204, 0.6); /* Refined cleaner border */
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    
+    /* THE MAGIC: Rich depth with premium glow */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7), 
+               0 0 30px rgba(0, 255, 204, 0.3), 
+               inset 0 0 20px rgba(0, 255, 204, 0.1),
+               inset 0 2px 4px rgba(255, 255, 255, 0.05); /* Extra subtle highlights */
+    
+    /* Bouncy elastic snap transition */
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.btn-text {
+    display: inline-block;
+    color: #00ffcc; 
+    font-size: 1.6rem; /* Slightly bolder font size */
+    font-weight: bold;
+    letter-spacing: 6px; /* Enhanced letter spacing */
+    pointer-events: none; /* Let clicks pass through text */
+    
+    /* Bright text with strong glow */
+    text-shadow: 0 0 15px rgba(0, 255, 204, 0.8); 
+    
+    /* Smooth parallax transition */
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
