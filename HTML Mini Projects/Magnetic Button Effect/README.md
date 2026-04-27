@@ -3,8 +3,8 @@
 ## Magnetic Button Effect
 <div align="left">
   <a href="https://titancoder11tc121gh.github.io/HTML-Mini-Projects-TC11/HTML%20Mini%20Projects/Magnetic%20Button%20Effect/"><img src="https://img.shields.io/badge/LIVE_DEMO-2ecc71?style=pill&logo=google-chrome&logoColor=white" height="45"></a> 
-  <a href="https://youtube.com/shorts/evJg4IKGpvM?si=zxI0_40VZ36Our6R"><img src="https://img.shields.io/badge/SHORT-ff0000?style=pill&logo=youtube&logoColor=white" height="45"></a>
-  <a href="https://www.instagram.com/reel/DXPFQOzCOJv/?igsh=MW45aXdpcnlqMTQydw=="><img src="https://img.shields.io/badge/REEL-e4405f?style=pill&logo=instagram&logoColor=white" height="45"></a>
+  <a href="https://youtube.com/shorts/zAO0anM4Fbo?si=5v7k4hx2sYRtjtg8"><img src="https://img.shields.io/badge/SHORT-ff0000?style=pill&logo=youtube&logoColor=white" height="45"></a>
+  <a href="https://www.instagram.com/reel/DXoybxriIXd/?igsh=ZXB1OHh5YjBkMXV0"><img src="https://img.shields.io/badge/REEL-e4405f?style=pill&logo=instagram&logoColor=white" height="45"></a>
 </div>
 
 ---
